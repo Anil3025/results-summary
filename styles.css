@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* TEXT COLORS */
+    --red-text-color: #FF5757;
+    --orange-text-color: #FFB01F;
+    --teal-text-color: #00BD91;
+    --blue-text-color: #1125D4;
+
+    /* TEXT BG COLORS */
+    --red-bg-color: rgba(255, 87, 87, 0.1);
+    --orange-bg-color: rgba(255, 176, 31, 0.1);
+    --teal-bg-color: rgba(0, 189, 145, 0.1);
+    --blue-bg-color: rgba(17, 37, 212, 0.1);
+
+
+    /* BUTTON BG COLOR */
+    --button-bg-color: #303B5A;
+
+}
+
+/* ICON STYLES */
+
+
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+
+/* SECTION LEFT STYLES */
+.container .left {
+    background: linear-gradient(180deg, rgba(120, 87, 255, 1) 10%, rgba(46, 43, 233, 1) 100%);
+    width: 50%;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.mainHeading {
+    color: #C8C7FF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 10%, hsla(241, 72%, 46%, 0) 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle .bigText {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.circle .smallText {
+    font-size: 18px;
+    color: #8779FF;
+    font-weight: bold;
+}
+
+.subHead {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subText {
+    color: #C8C7FF;
+    text-align: center;
+    padding: 0 35px;
+}
+
+/* SECTION RIGHT STYLES */
+.right {
+    width: 50%;
+    padding: 30px 40px;
+}
+
+.rightHeading {
+    margin: 0 0 20px 0;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.box1 {
+    color: var(--red-text-color);
+    background-color: var(--red-bg-color);
+}
+
+.box2 {
+    color: var(--orange-text-color);
+    background-color: var(--orange-bg-color);
+}
+
+.box3 {
+    color: var(--teal-text-color);
+    background-color: var(--teal-bg-color);
+}
+
+.box4 {
+    color: var(--blue-text-color);
+    background-color: var(--blue-bg-color);
+}
+
+.box .boxLeft {
+    display: flex;
+    gap: 7px;
+}
+
+.box .boxRight {
+    color: var(--button-bg-color)
+}
+
+.box .boxRight span {
+    color: gray;
+}
+
+.right button {
+    background: var(--button-bg-color);
+    color: white;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    margin: 30px 0 20px 0;
+    font-weight: 700px;
+    font-size: 18px;
+    transition: background .35s ease;
+}
+
+.right button:hover {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:1100px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:590px) {
+    body {
+        height: 100%;
+    }
+
+    .container {
+        display: block;
+        width: 65%;
+        min-width: 330px;
+        border-radius: 0px;
+    }
+
+    .container .left {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .container {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .subText {
+        padding: 0 10px;
+    }
+}
